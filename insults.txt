@@ -21,7 +21,6 @@ Henry IV Part 1~There’s no more faith in thee than in a stewed prune.
 The Tempest~Thine forward voice, now, is to speak well of thine friend; thine backward voice is to utter foul speeches and to detract.
 Henry IV Part 1~That trunk of humours, that bolting-hutch of beastliness, that swollen parcel of dropsies, that huge bombard of sack, that stuffed cloak-bag of guts, that roasted Manningtree ox with pudding in his belly, that reverend vice, that grey Iniquity, that father ruffian, that vanity in years?
 Henry V~Thine face is not worth sunburning.
-All’s Well That Ends Well~This woman’s an easy glove, my lord, she goes off and on at pleasure.
 King Lear~Thou art a boil, a plague sore
 Measure For Measure~Was the Duke a flesh-monger, a fool and a coward?
 Henry IV Part 1~Thou art as fat as butter.
@@ -47,7 +46,6 @@ Henry IV Part 2~You are as a candle, the better burnt out.
 Henry IV Part 2~You scullion! You rampallian! You fustilarian! I’ll tickle your catastrophe!
 Henry IV Part 1~You starvelling, you eel-skin, you dried neat’s-tongue, you bull’s-pizzle, you stock-fish–O for breath to utter what is like thee!-you tailor’s-yard, you sheath, you bow-case, you vile standing tuck!
 As You Like It~Your brain is as dry as the remainder biscuit after voyage.
-All’s Well That Ends Well~Virginity breeds mites, much like a cheese.
 Titus Andronicus~Villain, I have done thy mother
 Othello~Heaven truly knows that thou art false as hell
 Richard III~Out of my sight! Thou dost infect mine eyes.
@@ -58,6 +56,105 @@ Hamlet~They have a plentiful lack of wit.
 Macbeth~It is a tale told by an idiot, full of sound and fury, signifying nothing.
 Henry IV~His wit’s as thick as a Tewkesbury mustard
 Coriolanus~Your abilities are too infant-like for doing much alone.
+Hamlet~If thou wilt needs marry, marry a fool; for wise men know well enough what monsters you make of them.
+Troilus and Cressida~Thou sodden-witted lord! Thou hast no more brain than I have in mine elbows!
+Two Gentlemen of Verona~If you spend word for word with me, I shall make your wit bankrupt.
+Troilus and Cressida~He has not so much brain as ear-wax.
+Timon of Athens~Thou art the cap of all the fools.
+The Taming of the Shrew~There’s small choice in rotten apples.
+The Taming of the Shrew~Away thou rag, thou quantity, thou remnant.
+Titus Andronicus~Foul spoken coward, that thund’rest with thy tongue, and with thy weapon nothing dares perform.
+Macbeth~Go, prick thy face, and over-red thy fear, Thou lily-liver’d boy.
+The Two Gentlemen of Verona~You, minion, are too saucy.
+Henry IV~I scorn you, scurvy companion.
+All's Well The Ends Well~You are not worth another word, else I’d call you knave.
+King Lear~Thou whoreson zed, thou unnecessary letter!
+Henry IV~Away, you mouldy rogue, away!
+As You Like It~I do desire that we may be better strangers.
+All's Well That Ends Well~Drunkenness is his best virtue, for he will be swine drunk, and in his sleep he does little harm, save to his bedclothes about him.
+Twelfth Night~You are now sailed into the north of my lady’s opinion, where you will hang like an icicle on a Dutchman’s beard.
+The Comedy of Errors~Threadbare juggler!
+King Lear~Eater of broken meats!
+As You Like It~Saucy lackey!
+Othello~Heaven truly knows that thou art false as hell.
+The Two Gentlemen of Verona~Thou subtle, perjur’d, false, disloyal man!
+The Tempest~Thine forward voice, now, is to speak well of thine friend; thine backward voice is to utter foul speeches and to detract.
+The Comedy of Errors~Dissembling harlot, thou art false in all.
+All's Well That Ends Well~A most notable coward, an infinite and endless liar, an hourly promise breaker, the owner of no one good quality.
+Timon of Athens~I do wish thou were a dog, that I might love thee something.
+Richard III~Bottled spider!
+The Taming Of the Shrew~Come, come, you froward and unable worms!
+Hamlet~What a thrice-double ass!
+Henry IV~A weasel hath not such a deal of spleen as you are toss’d with.
+Hamlet~Pigeon-liver’d and lack gall.
+Two Gentlemen ofn Verona~She hath more hair than wit, and more faults than hairs, and more wealth than faults.
+A Midsummer Night's Dream~I am sick when I do look on thee.
+King Lear~Thou art a boil, a plague sore, an embossed carbuncle in my corrupted blood.
+The Merry Wives of Windsor~The rankest compound of villainous smell that ever offended nostril.
+King John~O you beast! I’ll so maul you and your toasting-iron, That you shall think the devil is come from hell.
+All's Well That Ends Well~By mine honour, if I were but two hours younger, I’d beat thee. Methink’st thou art a general offence, and every man should beat thee.
+Timon of Athens~Would thou wouldst burst!
+The Taming of the Shrew~Away, you three-inch fool!
+Henry IV~That trunk of humours, that bolting-hutch of beastliness, that swollen parcel of dropsies, that huge bombard of sack, that stuffed cloak-bag of guts, that roasted Manningtree ox with pudding in his belly, that reverend vice, that grey Iniquity, that father ruffian, that vanity in years?
+The Taming of the Shrew~Thou flea, thou nit, thou winter-cricket thou!
+Henry IV~Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch!
+Hamlet~Bloody, bawdy villain! Remorseless, treacherous, lecherous, kindless villain!
+Troilus and Cressida~I think thy horse will sooner con an oration than thou learn a prayer without book.
+Henry VI~Thy words are blunt and so art thou.
+Measure for Measure~Sanctimonious pirate.
+Twelfth Night~No more brain than a stone.
+The Tempest~A pos o' your throat, you bawling, blasphemous, incharitable dog.
+Henry IV~Thou paper-fac'd villain
+A Midsummer Night's Dream~How low an I, thou painted maypole?
+Much Ado About Nothing~Scambling, outfacing, fashion-monging boys, That lie and cog and flout.
+Henry IV~A weasel hath not such a deal of spleen as you are toss'd with.
+All's Well that Ends Well~He's a most notable coward, and infinite and endless liar, an hourly promise-breaker.
+Hamlet~They have a plentiful lack of wit.
+King Lear~You base football player
+Henry IV~Peace, ye fat guts.
+King Lear~You cullionly barbermonger
+Henry IV~Nut-hook, nut-hook, you lie.
+Macbeth~You do unbend your noble strength, to think so brainsickly of things.
+The Taming of the Shrew~Away thou rag, thou quantity, thou remnant.
+Titus Andronicus~Foul spoken coward, that thund’rest with thy tongue, and with thy weapon nothing dares perform
+As You Like It~In civility thou seem'st so empty.
+Henry IV~You starveling, you eel-skin, you dried neat’s-tongue, you bull’s-pizzle, you stock-fish–O for breath to utter what is like thee!-you tailor’s-yard, you sheath, you bow-case, you vile standing tuck!
+Richard III~[Thou] foul defacer of God's handiwork.
+As You Like It~Sweep on, you fat and greasy citizens!
+King Lear~[Thou art] a knave, a rascal, an eater of broken meats; a base, proud, shallow, beggarly, three-suited, hundred-pound, filthy, worsted-stocking knave; a lily-livered, action-taking knave; a whoreson, glass-gazing, super-serviceable finical rogue; one-trunk-inheriting slave; one that wouldst be a bawd in way of good service; and art nothing but the composition of a knave, beggar, coward, pander, and the son and heir of a mongrel bitch; one whom I will beat into clamorous whining if thou deniest the least syllable of thy addition.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
