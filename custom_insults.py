@@ -1,5 +1,5 @@
-f = open("custom_insults.txt", 'r')
-
+f = open("words.txt", 'r')
+f2 = open("custom_insults.txt", 'w')
 insults = []
 first = []
 second = []
@@ -16,6 +16,7 @@ length = len(first)
 for i in range(length):
     for j in range(length):
         for k in range(length):
-            insults.append(first[i] + " " + second[j] + " " + third[k])
-print(length)
-print(insults)
+            f2.write(first[i] + " " + second[j] + " " + third[k] + "\n")
+
+f.close()
+f2.close()
