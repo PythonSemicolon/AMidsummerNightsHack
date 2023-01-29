@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Midsummer Night's Hack</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Solitreo|Pirata+One|Nanum Myeongjo">
+
+</head>
+<script src="/static/js/jquery-3.6.0.js"></script>
+<script src="/static/js/main.js"></script>
+<body>
+    <div class="title">
+        <!--<table>
+            <tr>
+                 <td><img class="border" src="horizontal-line-divider-11562893537hdouwbyd4o-removebg-preview.png" alt="border" width="200px"></td> -->
+                <td><h1 id="main-title">A Midsummer Night's Hack</h1></td>
+                <!-- <td><img class="border" src="horizontal-line-divider-11562893537hdouwbyd4o-removebg-preview_rev.png" alt="border"></td>
+            </tr>
+        </table>
+         -->
+        <p class="reg-text" id="description">A Shakespearean-insult-derived chatbot, powered with artificial intelligence and devilish wit.</p>    
+        </div>
+    <hr>
+
+
+    
+    
+    <!--Chatbox-->
+    
+    <h2 id="disclaimer">Disclaimer: not for the faint of heart!</h2>
+    <div class="personal">
+
+        <!--Form of Personal Information-->
+        <form method="post" action="/generateInsult">
+
+            <!--<legend>Personal Info to Roast You Better</legend>background: url(https://cdn.wallpapersafari.com/33/10/JaQ7AH.jpg);-->
+            <!--First Name-->
+            <br>
+            <p>Say something to Shakespeare!</p>
+            <input type="text" name="user-input" id="user-input"/>
+            <br>
+            <input type="submit" id="submit" class="btn" name="submit" value="Insult me!">            
+        </form>
+        
+        <form method="post" action="/generateCustomInsult">
+            <input type="submit" id="feeling-brave" class="btn" name="feeling-brave" value="Feeling brave?">
+        </form>
+    </div>
+    <div class="initial-question">
+        <img src="https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzgzMzkwNzMz/william-shakespeare-194895-1-402.jpg" alt="icon not available" style="width:10%;">
+        <div id="text-message">{{ insult }}</div>
+        <div id="author">{{ author }}</div>
+    </div>
+
+    
+
+    <script>
+        document.getElementById("submit").addEventListener("click", () => {
+
+                    document.getElementById("submit").style.display = "none";
+                    document.getElementById("loading").style.display = "inline";
+                });
+    </script>
+
+</body>
+</html>

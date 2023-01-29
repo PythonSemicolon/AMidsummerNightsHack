@@ -7,6 +7,11 @@ import os
 
 categories = ["blabbermouth", "coward", "liar", "stupid", "ugly", "unlikeable", "useless", "general", "offensive"]
 
+app = Flask(__name__)
+@app.route("/")
+def index():
+    return render_template("index.html")
+
 
 def read_file(filename, multi):
     f = open(filename, "r", encoding='utf-8')
@@ -15,7 +20,7 @@ def read_file(filename, multi):
         data = line
         if multi:
             d_list = data.split("~")
-            data_list.append(d_list[1])
+            data_list.append(d_list)
         else:
             data_list.append(data)
         # print(d_list[1])
@@ -127,15 +132,95 @@ def get_insult(filename, category):
             break
     insult = insults[index]
     print(insult)
+    return insult
 
+
+@app.route('/generateInsult', methods=["POST"])
+def generate_insult():
+    path = os.getcwd()
+   # get_insult(path + "/venv/files/new_insults.csv", "general")
+
+    user_input = request.form['user-input']
+    category = ""
+    if len(user_input) > 100:
+        category = "blabbermouth"
+    else:
+        co = cohere.Client('GrQHcfdmGkhOW3Q3Mmeo7WXAeCIWPoVj0xnIFBkc')  # This is your trial API key
+        response = co.classify(
+            model='large',
+            inputs=[user_input],
+            examples=[Example("Give me an insult for my friend who is a coward", "coward"),
+                      Example("I\'m not feeling very confident", "coward"), Example("This chatbot is scary", "coward"),
+                      Example("I\'m scared", "coward"), Example("I don\'t know what to put", "coward"),
+                      Example("I am a liar", "liar"), Example("My friend doesn\'t tell the truth", "liar"),
+                      Example("What I say is false", "liar"), Example("This is a lie", "liar"),
+                      Example("Insult my dishonest buddy", "liar"), Example("My friend betrayed me", "liar"),
+                      Example("I am a disloyal person", "liar"), Example("You suck and are awful", "offensive"),
+                      Example("Shakespeare is the worst author!", "offensive"),
+                      Example("You are a terrible playwright!", "offensive"),
+                      Example("I hate you and your books", "offensive"),
+                      Example("I really dislike William Shakespeare", "offensive"),
+                      Example("Help me insult my stupid friend", "stupid"), Example("I am an idiot", "stupid"),
+                      Example("I failed my math exam", "stupid"), Example("My brain hurts", "stupid"),
+                      Example("I don\'t really know what I\'m doing?", "stupid"), Example("Huh?", "stupid"),
+                      Example("My friends is very ugly, insult them", "ugly"), Example("I am not very attractive", "ugly"),
+                      Example("I didn\'t shower today", "ugly"), Example("My hair is a mess", "ugly"),
+                      Example("He has a horrible face", "ugly"), Example("I hate my friend", "unlikeable"),
+                      Example("Everyone dislikes me", "unlikeable"), Example("I don\'t have any friends", "unlikeable"),
+                      Example("I think I\'m better than everyone", "unlikeable"),
+                      Example("Other people hate me and I also hate them", "unlikeable"),
+                      Example("I have nothing to offer to society", "useless"),
+                      Example("My friend isn\'t doing anything with their life", "useless"),
+                      Example("There\'s nothing to say", "useless"), Example("This is boring", "useless"),
+                      Example("I have no job and live in my parent\'s basement all day", "useless")])
+        category = response.classifications[0].prediction
+
+        if response.classifications[0].confidence < 0.2:
+            category = "general"
+
+        print('The confidence levels of the labels are: {}'.format(response.classifications))
+
+    insult = get_insult(path + "/files/new_insults.csv", category)
+    author = "unknown"
+    insult_data = read_file(path + "/files/insults.txt", True)
+    for entry in insult_data:
+        source, quote = entry
+        quote = quote.rstrip()
+        # print(quote)
+        # print(insult[1:-2])
+        if quote == insult[1:-2]:
+            author = source
+            break
+    return render_template("index.html", insult=insult, author=author)
+
+@app.route('/generateCustomInsult', methods=["POST"])
+def get_custom_insult():
+    path = os.getcwd()
+    file = open(path + "/files/custom_insults.txt", 'r')
+    insults = []
+    for line in file:
+        insults.append(line)
+
+    insult = random.choice(insults).lower()
+    is_vowel = insult[0] in 'aeiou'
+    if is_vowel:
+        insult = "Thou art an " + insult.rstrip()
+    else:
+        insult = "Thou art a " + insult.rstrip()
+    insult += "!"
+    author = "Custom-generated"
+    return render_template("index.html", insult =insult, author=author)
 
 def main():
+
     path = os.getcwd()
     # data_list = read_file(path + "/venv/files/insults.txt", True)
     # write_file(path + "/venv/files/new_insults.csv", data_list)
-    get_insult(path + "/venv/files/new_insults.csv", "general")
+    get_insult(path + "/files/new_insults.csv", "general")
     # add_categories(path + "/venv/files/new_insults.txt", path + "/venv/files/insults_training_examples.csv")
 
 
 if __name__ == "__main__":
-    main()
+    #main()
+    #print(get_custom_insult())
+    app.run()

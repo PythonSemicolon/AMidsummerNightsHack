@@ -1,5 +1,6 @@
 #text-message {
     font-family: "Solitreo", sans-serif;
+    margin-top: 10px;
 }
 
 #main-title{
@@ -14,26 +15,30 @@
     
     color:rgb(78, 36, 36);
     font-family: "Pirata One", sans-serif;
-    margin: 25px;
+    margin: 25px 25px -50px 25px;
 
 }
 
 .reg-text{
-    font-family: "Nanum Myeongjo", serif;
     font-weight: bolder;
 
 }
 
 body {
     background: url(https://img.freepik.com/free-photo/vintage-grungy-textured-paper-background_53876-103932.jpg?w=2000);
+    font-family: "Nanum Myeongjo", sans-serif;
+    font-weight: bolder;
     
 }
 
 /*Chat box Stuff*/
 .initial-question {
-    background-color: #ebdace;
-    padding: 10px;
-    margin: 10px 25px;;
+    background-color: #f2edd9;
+    padding: 15px;
+    height: 50px;
+    margin: 10px 25px;
+    border-radius: 10px;
+    border: 3px double rgb(78, 36, 36);
 }
 
 .initial-question img {
@@ -62,8 +67,47 @@ hr {
     margin-bottom: 50px;
 }
 
-
-
 .personal {
     margin: 25px;
 }
+
+#feeling-brave{
+    display: inline;
+
+}
+
+input{
+    font-family: "Nanum Myeongjo", sans-serif;
+    font-weight: bolder;
+}
+
+#author{
+    margin: auto auto -10px 25px;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.btn {
+    border-radius: 10px;
+    color: #f2edd9;
+    font-size: 1.1em;
+    background: rgb(78, 36, 36);
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #f2edd9;
+    text-decoration: none;
+    color: rgb(78, 36, 36);
+    cursor: pointer;
+  }
+
+  #submit {
+    margin: 10px 0 5px;
+  }
+
+  #user-input {
+    width: 500px; 
+    height: 25px;
+  }
