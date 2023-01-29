@@ -1,0 +1,69 @@
+#text-message {
+    font-family: "Solitreo", sans-serif;
+}
+
+#main-title{
+    text-align: center;
+    font-family: "Pirata One", sans-serif;
+    font-size: 3em;
+    color: #241203;
+    text-shadow: 2px 2px #624735;
+}
+
+#disclaimer{
+    
+    color:rgb(78, 36, 36);
+    font-family: "Pirata One", sans-serif;
+    margin: 25px;
+
+}
+
+.reg-text{
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: bolder;
+
+}
+
+body {
+    background: url(https://img.freepik.com/free-photo/vintage-grungy-textured-paper-background_53876-103932.jpg?w=2000);
+    
+}
+
+/*Chat box Stuff*/
+.initial-question {
+    background-color: #ebdace;
+    padding: 10px;
+    margin: 10px 25px;;
+}
+
+.initial-question img {
+    float: left;
+    max-width: 50px;
+    width: 90%;
+    margin-right: 20px;
+    border-radius: 50%;
+
+}
+#description {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #241203;
+    color: #241203;
+    height: 5px;
+    width: 40%;
+}
+
+.title {
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+
+
+.personal {
+    margin: 25px;
+}
